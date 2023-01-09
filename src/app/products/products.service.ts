@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ProductsRoutingModule } from './products-routing.module';
 import { Products } from './products';
 import { Observable } from 'rxjs';
 import { Category } from '../site-framework/category';
@@ -32,7 +31,7 @@ export class ProductsService {
   }
 
   searchCategoryProducts(categoryId:any):Observable<Products>  {
-    const productUrl = "http://localhost:3000/products/" + categoryId;
+    const productUrl = "http://localhost:3000/products?categoryId="+categoryId;
     return this.httpClient.get<Products>(productUrl);
   }
   searchDateProducts(dateParam:any):Observable<Products>  {

@@ -2,10 +2,10 @@
     "products": [
       { 
         "productId":1,
-        "categoryId":2,
+        "categoryId":1,
         "productName":"Shirt 1",
         "productImg":"",
-        "description":"Product description", 
+        "description":"Category 1", 
         "rating":"***",
         "price":120,
         "isAvailable":true,
@@ -13,11 +13,11 @@
         "reviews":10
       },
       { 
-        "productId":1,
+        "productId":2,
         "categoryId":2,
         "productName":"Shirt 1",
         "productImg":"",
-        "description":"Product description", 
+        "description":"Category 2", 
         "rating":"***",
         "price":120,
         "isAvailable":true,
@@ -25,18 +25,54 @@
         "reviews":"review stay here"
       },
       { 
-        "productId":1,
-        "categoryId":2,
+        "productId":3,
+        "categoryId":3,
         "productName":"Shirt 1",
         "productImg":"",
-        "description":"Product description", 
+        "description":"Category 3", 
         "rating":"***",
         "price":120,
         "isAvailable":true,
         "color":"red",
         "reviews":"review stay here"
-      }
-    ],
+    },
+      { 
+        "productId":4,
+        "categoryId":4,
+        "productName":"Shirt 1",
+        "productImg":"",
+        "description":"Category 4", 
+        "rating":"***",
+        "price":120,
+        "isAvailable":true,
+        "color":"red",
+        "reviews":"review stay here"
+      },
+      { 
+        "productId":5,
+        "categoryId":5,
+        "productName":"Shirt 1",
+        "productImg":"",
+        "description":"Category 5", 
+        "rating":"***",
+        "price":120,
+        "isAvailable":true,
+        "color":"red",
+        "reviews":"review stay here"
+      },
+      { 
+        "productId":6,
+        "categoryId":6,
+        "productName":"Shirt 1",
+        "productImg":"",
+        "description":"Category 6", 
+        "rating":"***",
+        "price":120,
+        "isAvailable":true,
+        "color":"red",
+        "reviews":"review stay here"
+      }]
+,
 
     "categories":[
       {"id":1, "categoryName": "Polo Tshirts"},

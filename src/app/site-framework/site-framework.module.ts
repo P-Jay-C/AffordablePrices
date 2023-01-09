@@ -6,19 +6,20 @@ import { FooterComponent } from './footer/footer.component';
 
 
 
+
 @NgModule({
   declarations: [
-    HeaderComponent,
+    HeaderComponent, 
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,  
   ],
   exports:[
     HeaderComponent,
-    SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ]
 })
 export class SiteFrameworkModule { }

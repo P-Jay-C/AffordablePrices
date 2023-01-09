@@ -1,5 +1,4 @@
-<div class="list-group mb-4 p-lg-0" >
-    <a href="#item" class="list-group-item list-group-item-primary bg-transparent" *ngFor="let cat of categoryList">
-        {{cat.categoryName}}
-    </a>
-</div>
+<div class="list-group" *ngFor="let cat of categoryList">
+<a class="list-group-item list-group-item-primary bg-transparent" href ="products/category/{{cat.id}}" > 
+    {{cat.categoryName}}
+</a>

@@ -5,21 +5,21 @@ import {HttpClientModule} from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SiteFrameworkModule } from './site-framework/site-framework.module';
 import { ProductsService } from './products/products.service';
+import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    OrdersModule,
-    SiteFrameworkModule,
-    HttpClientModule
-  ],
-  providers: [ProductsService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    providers: [ProductsService],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        OrdersModule,
+        SiteFrameworkModule,
+        HttpClientModule,
+    ]
 })
 export class AppModule { }

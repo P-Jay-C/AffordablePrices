@@ -11,7 +11,6 @@ export class ViewAllProductsComponent {
 
   productList : any;
   constructor(private productService: ProductsService){
-
   }
 
   ngOnInit(): void {
