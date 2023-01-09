@@ -2,20 +2,18 @@
     <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
 </div>
 <div class="col-md-6">
-    <div class="small mb-1">Small</div>
-    <h1 class="display-5 fw-bolder"></h1>
+    <div class="small mb-1"> Hey</div>
+    <h1 class="display-5 fw-bolder">{{productDetails[productId-1].productName}}</h1>
+
+    <a href="products/update-product/{{productId}}">Update Product</a>|
+    <a href="products/delete-product/{{productId}}">Delete Product</a>
     <div class="fs-5 mb-5">
-        <span class="text-decoration-line-through">$45.00</span>
-        <span>$40.00</span>
+        <span>${{productDetails[productId-1].price}}</span>
     </div>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam
-        sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste
-        laborum vero?</p>
+    <p class="lead">
+        {{productDetails[productId-1].description}}
+    </p>
     <div class="d-flex">
-        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-        <button class="btn btn-outline-dark flex-shrink-0" type="button">
-            <i class="bi-cart-fill me-1"></i>
-            Add to cart
-        </button>
+        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="{{productDetails[productId-1].rating}}" style="max-width: 3rem" />
     </div>
 </div>

@@ -1,3 +1,84 @@
-<p>update-product works!</p>
+<form #addProductForm="ngForm" (submit)="updateProduct(addProductForm)">
+    <div class="form-row">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label for="productName" class="form-label mt">Product Name</label>
+                    <input type="text" [(ngModel)]="productDetails[productId].productName" class="form-control" ngModel name="productName" id=""
+                        aria-describedby="helpId" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label class="form-label" for="categoryId">Category Id</label>
+                    <input type="text"  [(ngModel)]="productDetails[productId].categoryId" class="form-control" ngModel name="categoryId" id="" 
+                        aria-describedby="helpId" placeholder="">
+                </div>
+            </div>
+        </div>
+    </div>
 
-ProductId: {{productId}}
+    <div class="form-row">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label class="form-label" for="description"> Description</label>
+                    <input type="text" [(ngModel)]="productDetails[productId].description" class="form-control" ngModel name="description" id=""
+                        aria-describedby="helpId" placeholder="Enter product description">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <select class="form-select form-select" [(ngModel)]="productDetails[productId].rating" name="rating" id="" ngModel>
+                        <option selected>Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label class="form-label" for="color">Product Color</label>
+                    <input type="text" [(ngModel)]="productDetails[productId].color" class="form-control" ngModel name="color" id=""
+                        aria-describedby="helpId" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label for="isAvailable" class="form-label">Is Available</label>
+                    <select class="form-select form-select" [(ngModel)]="productDetails[productId].isAvailable" name="isAvailable" id="" ngModel>
+                        <option selected>Select one</option>
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label class="form-label" for="price">Product Price</label>
+                    <input type="text" [(ngModel)]="productDetails[productId].price" class="form-control" ngModel name="price" id=""
+                    aria-describedby="helpId" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="mb-3">
+                    <label for="reviews" class="form-label"> Reviews </label>
+                    <input type="number" [(ngModel)]="productDetails[productId].reviews" class="form-control" name="reviews" ngModel>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

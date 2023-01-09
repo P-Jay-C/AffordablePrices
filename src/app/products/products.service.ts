@@ -11,13 +11,13 @@ export class ProductsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  createProduct(poductBody: any):Observable<Products> {
-    const productUrl = "http://localhost:3000/products/";
-      return this.httpClient.post<Products>(productUrl, poductBody)
+  createProduct(productBody: any):Observable<Products> {
+    const productUrl = "http://localhost:3000/products";
+      return this.httpClient.post<Products>(productUrl, productBody);
   }
 
   viewProduct(productId:any) :Observable<Products>  {
-    const productUrl = "http://localhost:3000/products/" + productId;
+    const productUrl = "http://localhost:3000/products?productId=" + productId;
     return this.httpClient.get<Products>(productUrl);
   }
 

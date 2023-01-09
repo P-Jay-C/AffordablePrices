@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsService } from './products/products.service';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
+import { FormsModule,NgForm } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
         OrdersModule,
         SiteFrameworkModule,
         HttpClientModule,
+        FormsModule
     ]
 })
 export class AppModule { }

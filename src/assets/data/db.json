@@ -1,89 +1,100 @@
 {
-    "products": [
-      { 
-        "productId":1,
-        "categoryId":1,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 1", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":10
-      },
-      { 
-        "productId":2,
-        "categoryId":2,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 2", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":"review stay here"
-      },
-      { 
-        "productId":3,
-        "categoryId":3,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 3", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":"review stay here"
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Shirt 1",
+      "productImg": "",
+      "description": "Category 1",
+      "rating": 2,
+      "price": 100,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
     },
-      { 
-        "productId":4,
-        "categoryId":4,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 4", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":"review stay here"
-      },
-      { 
-        "productId":5,
-        "categoryId":5,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 5", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":"review stay here"
-      },
-      { 
-        "productId":6,
-        "categoryId":6,
-        "productName":"Shirt 1",
-        "productImg":"",
-        "description":"Category 6", 
-        "rating":"***",
-        "price":120,
-        "isAvailable":true,
-        "color":"red",
-        "reviews":"review stay here"
-      }]
-,
-
-    "categories":[
-      {"id":1, "categoryName": "Polo Tshirts"},
-      {"id":2, "categoryName":"Soccer Tshirts"},
-      {"id":3, "categoryName": "Casual Tshirts"},
-      {"id":4, "categoryName": "Shirts"},
-      {"id":5, "categoryName": "Shorts"},
-      {"id":6, "categoryName": "Sweat Tops "}
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+    {
+      "id": 2,
+      "categoryId": 2,
+      "productName": "Shirt 2",
+      "productImg": "",
+      "description": "Category 2",
+      "rating": 3,
+      "price": 200,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 12
+    },
+    {
+      "id": 4,
+      "categoryId": 4,
+      "productName": "Shirt 4",
+      "productImg": "",
+      "description": "Category 4",
+      "rating": 5,
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 7
+    },
+    {
+      "id": 5,
+      "categoryId": 5,
+      "productName": "Shirt 5",
+      "productImg": "",
+      "description": "Category 5",
+      "rating": 1,
+      "price": "500",
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 20
+    },
+    {
+      "id": 6,
+      "categoryId": 6,
+      "productName": "Shirt 6",
+      "productImg": "",
+      "description": "Category 6",
+      "rating": 4,
+      "price": 600,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Polo Tshirts"
+    },
+    {
+      "id": 2,
+      "categoryName": "Soccer Tshirts"
+    },
+    {
+      "id": 3,
+      "categoryName": "Casual Tshirts"
+    },
+    {
+      "id": 4,
+      "categoryName": "Shirts"
+    },
+    {
+      "id": 5,
+      "categoryName": "Shorts"
+    },
+    {
+      "id": 6,
+      "categoryName": "Sweat Tops "
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
